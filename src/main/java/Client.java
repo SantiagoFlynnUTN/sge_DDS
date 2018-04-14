@@ -1,9 +1,12 @@
+import java.util.Date;
+
 public class Client extends User {
 
     private String docType;
     private String document;
     private int category;
     private String phone;
+    private Date signDate;
 
     public String getDocType() {
         return docType;
@@ -33,6 +36,13 @@ public class Client extends User {
         this.phone = p;
     }
 
+    public Date getSignDate() {
+        return signDate;
+    }
+    public void setSignDate(Date d) {
+        this.signDate = d;
+    }
+
     public boolean hasOnDevices() {
 
         return true;
@@ -44,6 +54,11 @@ public class Client extends User {
     }
 
     public int numberOffDevices() {
+
+        return 0;
+    }
+
+    public int howManyDevices() {
 
         return 0;
     }

@@ -6,7 +6,8 @@ public class User {
     private String lastName;
     private String userName;
     private String password;
-    private Date signDate;
+    private String address;
+
 
     public String getName() {
         return name;
@@ -36,11 +37,11 @@ public class User {
         this.password = p;
     }
 
-    public String getSignDate() {
-        return userName;
+    public String getAddress() {
+        return address;
     }
-    public void setSignDate(Date d) {
-        this.signDate = d;
+    public void setAddress(String a) {
+        this.address = a;
     }
 
     private void signIn() {}
